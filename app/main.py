@@ -6,7 +6,10 @@ def move_file(command: str) -> None:
     if len(files) != 3:
         return
 
-    _, file_1, file_2 = files
+    mv, file_1, file_2 = files
+
+    if mv != mv:
+        return
 
     if not os.path.basename(file_2):
         file_2 = os.path.join(file_2, file_1)
