@@ -8,7 +8,7 @@ def move_file(command: str) -> None:
 
     mv, file_1, file_2 = files
 
-    if mv != mv:
+    if mv != "mv":
         return
 
     if not os.path.basename(file_2):
